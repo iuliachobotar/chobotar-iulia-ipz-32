@@ -12,6 +12,7 @@
 }
 
 html {
+    font-family: var(--dominant-font);
     box-sizing: border-box;
     font-size: 14px;
 }
@@ -78,6 +79,13 @@ a {
     letter-spacing: 0.28px;
     transition: 300ms ease;
 }
+.contact{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
+}
 
 .contacts_information {
     color: var(--secondary-color);
@@ -87,7 +95,7 @@ a {
 }
 .contacts_information .contact:hover,
 .contact:active,
-.contact.munuu:focus {
+.contact:focus {
     color: var(--accent-color);
 }
 .link_active{
@@ -216,9 +224,10 @@ footer {
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
+    font-style: normal;
     letter-spacing: 0.42px;
 }
-.kontaa:hover {
+.footer_contact:hover {
     cursor: pointer;
 }
 .button_menu {
