@@ -7,8 +7,8 @@
     --accent-color: #2196F3;
     --transperent-color: #FFFFFF99;
     --inactive-filter-color: #F5F4FA;
-    --dominant-font:'Roboto';
-    --secondary-font:'Raleway';
+    --dominant-font:'Roboto', sans-serif;
+    --secondary-font:'Raleway', sans-serif;
 }
 
 html {
@@ -17,16 +17,18 @@ html {
     font-size: 14px;
 }
 
-.body {
+body {
     font-family: var(--dominant-font);
     font-style: normal;
     line-height: normal;
-    font-size: 400px;
-    size: 14px;
-
+    font-size: 14px;
+    font-weight: 400;
 }
 li {
     list-style-type: none;
+}
+button {
+    font: inherit;
 }
 .logo_header span {
     font-family: var(--secondary-font), sans-serif;
@@ -59,7 +61,7 @@ a {
 }
 .link {
     color: var(--primary-color);
-    font-family: var(--dominant-font);
+
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
@@ -82,7 +84,6 @@ a {
 .contact{
     color: var(--primary-color);
     font-size: 14px;
-    font-weight: 400;
     line-height: normal;
     letter-spacing: 0.42px;
 }
@@ -159,7 +160,6 @@ h1 {
 .info_link {
     color: var(--secondary-color);
     font-size: 14px;
-    font-weight: 400;
     line-height: normal;
     letter-spacing: 0.03em;
     text-align: left;
@@ -194,7 +194,6 @@ h1 {
 .works_as {
     color: var(--secondary-color);
     font-size: 16px;
-    font-weight: 400;
     line-height: normal;
     letter-spacing: 0.03em;
     text-align: center;
@@ -214,7 +213,6 @@ footer {
 .address {
     color: var(--background-primary-color);
     font-size: 14px;
-    font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.42px;
     font-style: normal;
@@ -222,7 +220,6 @@ footer {
 .footer_contact {
     color: var(--secondary-color);
     font-size: 14px;
-    font-weight: 400;
     line-height: normal;
     font-style: normal;
     letter-spacing: 0.42px;
@@ -230,8 +227,9 @@ footer {
 .footer_contact:hover {
     cursor: pointer;
 }
-.button_menu {
+.button_list {
     box-sizing: border-box;
+    cursor: pointer;
     background-color: var(--inactive-filter-color);
     color: var(--primary-color);
     text-align: center;
@@ -239,9 +237,9 @@ footer {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.48px;
-    transition: background-color 300ms ease;
+    transition: background-color 300ms ease-in;
 }
-.button_menu:hover {
+.button_list:hover {
     background-color: var(--accent-color); 
     color: var(--primary-color);
 }
