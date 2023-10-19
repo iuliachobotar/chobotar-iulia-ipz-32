@@ -14,7 +14,6 @@
 
 html {
     font-family: var(--dominant-font);
-    font-size: 14px;
 }
 
 body {
@@ -23,6 +22,8 @@ body {
     line-height: normal;
     font-size: 14px;
     font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 h1,
 h2,
@@ -39,6 +40,13 @@ li {
 img{
     display: block;
 
+}
+.buttons li:not(:last-child){
+    margin-right: 8px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
 }
 button {
     font: inherit;
@@ -86,15 +94,12 @@ a {
 }
 .container{                             /* основа*/
     max-width: 1200px;
-    /*padding-left: 15px;
-    padding-right: 15px;*/
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
-.container_work{
-    display: flex;
-    flex-direction: column;   
-}
+
 .header{
     align-items: baseline;
 }
@@ -112,9 +117,7 @@ a {
     border-bottom: #ECECEC;
     height: 80px;
 }
-.menu{
-    margin-right: 50px;
-}
+
 .big_container{
     width: 100%;
     display: flex;
@@ -128,36 +131,44 @@ li{
     display: inline-block;
 }
 .logo_header{
-    padding-right: 93px;
+    margin-right: 93px;
 }
-.link{
-    padding-left: 50px;
+.menu li:not(:last-child) {
+margin-right: 50px;
 }
-.contact{
-    padding-left: 40px;
-}
+
 .info{
     margin-bottom: 10px;
 }
 .contacts_information{
     margin-left: auto;
-    gap: 40px;
+}
+.contacts_information li:not(:last-child){
+    margin-right: 40px;
 }
 
-.info_container{
+.info_container {
     display: flex;
     gap: 30px;
 }
+
+.info_container li {
+    max-width: 270px;
+}
+
+
 .img_list{
     display: flex;
     width: 100%;
     gap: 30px;
     justify-content: center;
     flex-direction: row;
-    padding-top: 50px;
+    margin-top: 50px;
     height: 294px;
-    margin-bottom: 94px;
     
+}
+.product{
+    padding-bottom: 94px;
 }
 
 .logo_header {
@@ -190,17 +201,16 @@ li{
 
 .text_info {
     background: var(--background-secondary-color);
-    text-transform: uppercase;
     height: 600px;
-    flex-shrink: 0;
 }
-h1 {
+.text_info  h1 {
     color: var(--background-primary-color);
     font-size: 44px;
     font-weight: 900;
     line-height: normal;
     text-align: center;
     max-width: 696px;
+    text-transform: uppercase;
     margin-bottom: 30px;
 }
 .button_cent {
@@ -297,6 +307,8 @@ h1 {
     line-height: normal;
     letter-spacing: 0.03em;
     text-align: center;
+}
+.teams :not(:last-child){
     padding-top: 30px;
     padding-bottom: 10px;
 }
@@ -324,18 +336,18 @@ footer {
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.78px;
-
+    margin-bottom: 28px;
+    display: inline-block;
 }
 .address {
     color: var(--background-primary-color);
     line-height: 16px;
     letter-spacing: 0.42px;
     font-style: normal;
-    padding-top: 28px;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
-.retreat{
-    padding-bottom: 12px;
+.footer_contacts_information li:not(:last-child){
+    margin-bottom: 12px;
 }
 .footer_contact {
     color: var(--secondary-color);
@@ -357,8 +369,8 @@ footer {
 }
 
 /*---------POTFOLIO------------*/
-.button_list{
-
+.all_port{
+    margin: 94px 0;
 }
 
 .button_list {
@@ -371,7 +383,6 @@ footer {
     line-height: normal;
     letter-spacing: 0.48px;
     transition: 300ms ease-in;
-    margin-right: 8px;
 
 }
 .button_list:hover {
@@ -398,8 +409,10 @@ footer {
     color:var(--secondary-color);
 }
 .project{
-    padding-top: 56px;
-
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .port{
     display: flex;
@@ -418,19 +431,12 @@ footer {
     border: 1px solid #EEE;
     background: #FFF;
 }
-.name_project{
-    margin-top: 20px;
-    margin-bottom: 4px;
-    padding-left: 24px;
-    padding-right: 24px;
-    line-height: normal;
-    
+.text_port{
+    padding: 20px 24px;
+    line-height: normal;    
 }
-.development{
-    margin-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    line-height: normal;
+.text_port:not(:last-child) {
+    padding-bottom: 4px;
 }
 .button_list{
     border: none;
