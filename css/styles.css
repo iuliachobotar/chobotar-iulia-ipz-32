@@ -59,7 +59,9 @@ a {
         color 1s;
 }
 /*    -----------HEADER-----------    */
-
+header.header{
+    border-bottom: 1px solid #ECECEC;
+}
 .text {
     padding: 20px;
     background-color: var(--background-primary-color);
@@ -251,6 +253,7 @@ margin-right: 50px;
     gap: 30px;
     justify-content: center;
     flex-direction: row;
+    margin-top: 50px;
 }
 
 .info {
@@ -276,6 +279,7 @@ margin-right: 50px;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+
 }
 .team {
     font-size: 36px;
@@ -283,13 +287,12 @@ margin-right: 50px;
     line-height: normal;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
+
 }
 .team_container{
     background-color: var(--inactive-filter-color);
     width: 100%;
-    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .people {
@@ -410,6 +413,7 @@ footer {
 }
 .project{
     display: flex;
+    gap: 30px;
     margin-top: 50px;
     flex-wrap: wrap;
     justify-content: center;
@@ -426,10 +430,9 @@ footer {
     flex-wrap: wrap;
 }
 .portfolio_info{
-    margin-right: 30px;
-    margin-bottom: 30px;
     border: 1px solid #EEE;
     background: #FFF;
+    
 }
 .text_port{
     padding: 20px 24px;
