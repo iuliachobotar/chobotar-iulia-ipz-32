@@ -224,6 +224,8 @@ margin-right: 50px;
 }
 .button_cent {
     cursor: pointer;
+    width: 200px;
+    height: 50px;
     border-radius: 4px;
     background: var(--accent-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -262,6 +264,10 @@ margin-right: 50px;
     flex-direction: row;
     margin-top: 50px;
     padding-bottom: 94px;
+}
+.teams{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .info {
@@ -304,8 +310,6 @@ margin-right: 50px;
 }
 
 .people {
-    width: 270px;
-    height: 428px;
     flex-shrink: 0;
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
@@ -318,7 +322,6 @@ margin-right: 50px;
     line-height: normal;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-top: 30px;
     padding-bottom: 10px;
 }
 
@@ -383,7 +386,7 @@ footer {
 
 /*---------POTFOLIO------------*/
 .all_port{
-    margin: 94px 0;
+    padding: 94px 0;
 }
 
 .button_list {
@@ -560,10 +563,12 @@ footer {
 padding-right: 30px;
 }
 .client{
-margin: 94px 215px;
+padding: 94px 215px;
+
 }
 .clients{
     margin-top: 50px;
+    display: flex;
 }
 .social{
     color: #FFF;
@@ -605,6 +610,7 @@ text-transform: uppercase;
 .footer_container{
     display: flex;
     column-gap: 94px;
+    align-items: baseline;
 }
 .social_networks{
     fill: #AFB1B8;
