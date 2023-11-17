@@ -473,7 +473,7 @@ padding: 0;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    line-height: normal;
+    line-height: 1.62;
     letter-spacing: 0.48px;
     transition: 300ms ease-in;
 
@@ -497,7 +497,7 @@ padding: 0;
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--primary-color);
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 }
 .development {
     font-size: 16px;
@@ -857,41 +857,36 @@ top: 270%;
 /*--------overlay-----------*/
 .overlay_container{
  position: relative;   
- display: inline-block;
+ overflow: hidden;
 }
-.overlay{
+.overlay {
     position: absolute;
-    transition: 250ms ease;
-    opacity: 0;
-    background: rgba(33, 150, 243, 0.90);
-    
-}
-.portfolio_info:hover .overlay_bottom{
-    opacity: 1;
+    top: 0;
+    width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 250ms ease;
+    transform: translateY(101%);
+    opacity: 1;
+    background: rgba(33, 150, 243, 0.90);
+}
+.portfolio_info:hover .overlay{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
 .overlay_text{
-    position: absolute;
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
     letter-spacing: 0.54px;
-    line-height: 28px; /* 155.556% */
-    padding-top: 63px;
-    padding-bottom: 63px;
-    padding-right: 24px;
-    padding-left: 24px;
+    line-height: 1.55;
+    padding: 24px;
 }
-.overlay_bottom{
-    width: 100%;
-    height: 0;
-    bottom: 0;
-    left: 0;
-}
+
+
 .condition_modal{
     display: flex;
     margin-top: 20px;
