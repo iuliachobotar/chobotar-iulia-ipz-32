@@ -637,11 +637,11 @@ padding: 0;
     border: 1px solid #2196F3;
     transition: 300ms ease;
 }
-.clients :not(:last-child){
-padding-right: 30px;
+.clients li:not(:last-child){
+margin-right: 30px;
 }
 .client{
-padding: 94px 215px;
+padding: 94px 0;
 
 }
 .clients{
