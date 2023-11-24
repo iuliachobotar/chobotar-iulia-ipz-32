@@ -54,6 +54,7 @@ button {
 a {
     color: var(--primary-color);
     text-decoration: none;
+
     transition:300ms ease;
 }
 /*    -----------HEADER-----------    */
@@ -73,6 +74,13 @@ header.header{
     font-size: 26px;
     letter-spacing: 0.78px;
 }
+.contact{
+    color: var(--secondary-color);
+    line-height: normal;
+    letter-spacing: 0.42px;
+    font-style: normal;
+}
+
 
 .contact:hover .icon_logo{
     fill: var(--accent-color);
@@ -91,7 +99,6 @@ header.header{
     transition: 250ms ease;
 }
 
-
 .contacts_information {
     color: var(--secondary-color);
     font-weight: 500;
@@ -99,6 +106,7 @@ header.header{
     transition: 300ms ease;
     text-decoration: none;
 }
+
 .contact:hover,
 .contact:focus {
     color: var(--accent-color);
@@ -178,6 +186,91 @@ margin-right: 50px;
 .product{
     padding-bottom: 94px;
 }
+.contacts_information .contact:hover,
+.contact:active,
+.contact:focus {
+    color: var(--accent-color);
+
+}
+.container{                             /* основа*/
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    align-items: baseline;
+}
+.header> .container{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+}
+.menu_info{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header{
+    border-bottom: #ECECEC;
+    height: 80px;
+}
+
+.big_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+li{
+    display: inline-block;
+}
+.logo_header{
+    margin-right: 93px;
+}
+.menu li:not(:last-child) {
+margin-right: 50px;
+}
+
+.info{
+    margin-bottom: 10px;
+}
+.contacts_information{
+    margin-left: auto;
+}
+.contacts_information li:not(:last-child){
+    margin-right: 40px;
+}
+
+.info_container {
+    display: flex;
+    gap: 30px;
+}
+
+.info_container li {
+    max-width: 270px;
+}
+
+
+.img_list{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+    height: 294px;
+    
+}
+.product{
+    padding-bottom: 94px;
+}
+
 .logo_header {
     font-family: var(--secondary-font), sans-serif;
     font-weight: 700;
@@ -210,6 +303,7 @@ margin-right: 50px;
 .text_info {
     background: var(--background-secondary-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/img.jpg');
+
     height: 600px;
 }
 .text_info  h1 {
@@ -224,8 +318,6 @@ margin-right: 50px;
 }
 .button_cent {
     cursor: pointer;
-    width: 200px;
-    height: 50px;
     border-radius: 4px;
     background: var(--accent-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -310,6 +402,9 @@ margin-right: 50px;
 }
 
 .people {
+
+    width: 270px;
+    height: 368px;
     flex-shrink: 0;
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
@@ -325,6 +420,10 @@ margin-right: 50px;
     padding-bottom: 10px;
 }
 
+.teams :not(:last-child){
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
 
 .works_as {
     color: var(--secondary-color);
@@ -333,6 +432,14 @@ margin-right: 50px;
     letter-spacing: 0.03em;
     text-align: center;
 
+}
+/*-------------FOOTER--------------*/
+.logo_footer span {
+    font-family: var(--secondary-font), sans-serif;
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.78px;
 }
 /*-------------FOOTER--------------*/
 .logo_footer span {
@@ -377,12 +484,12 @@ footer {
 .footer_container{
     padding-top: 60px;
     padding-bottom: 60px;
-    
 }
 .footer_contacts_information{
     display: flex;
     flex-direction: column;
 }
+
 .button_function>input{
     width: 358px;
 flex-shrink: 0;
@@ -464,6 +571,7 @@ padding: 0;
 /*---------POTFOLIO------------*/
 .all_port{
     padding: 94px 0;
+
 }
 
 .button_list {
@@ -527,11 +635,13 @@ padding: 0;
     background: #FFF;
     
 }
+
 .portfolio_info:hover{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     transition: 300ms ease;
     cursor: pointer;
 }
+
 .text_port{
     padding: 20px 24px;
     line-height: normal;    
@@ -547,6 +657,7 @@ padding: 0;
     padding: 6px 22px;
     border-radius: 4px;
     
+
 }
 
 /*------------SVG------------------*/
@@ -944,3 +1055,5 @@ cursor: pointer;
     align-items: center;
     justify-content: center;
 }
+
+
