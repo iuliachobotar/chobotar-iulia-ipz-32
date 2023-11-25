@@ -6,6 +6,7 @@
     --accent-color: #2196F3;
     --transperent-color: #FFFFFF99;
     --inactive-filter-color: #F5F4FA;
+    --light-grey-color: #AFB1B8;
     --dominant-font:'Roboto', sans-serif;
     --secondary-font:'Raleway', sans-serif;
 }
@@ -57,7 +58,13 @@ a {
 
     transition:300ms ease;
 }
-/*    -----------HEADER-----------    */
+/* header start */
+
+/* header end */
+
+/* text_info start */
+
+/* text_info end */
 header.header{
     border-bottom: 1px solid #ECECEC;
 }
@@ -357,10 +364,7 @@ margin-right: 50px;
     margin-top: 50px;
     padding-bottom: 94px;
 }
-.teams{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+
 
 .info {
     width: 270px;
@@ -388,52 +392,103 @@ letter-spacing: 0.42px;
     letter-spacing: 1.08px;
 
 }
+
+/* team start */
 .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--inactive-filter-color);
+}
+
+.team__title {
     font-size: 36px;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.03em;
     text-align: center;
-
-}
-.team_container{
-    background-color: var(--inactive-filter-color);
-    width: 100%;
-    padding-top: 94px;
+    margin-bottom: 50px;
 }
 
-.people {
+.team__list {
+    display: flex;
+    gap: 30px;
+}
 
-    width: 270px;
-    /* height: 368px; */
-    flex-shrink: 0;
+.team__item {
     border-radius: 0px 0px 4px 4px;
-    background: #FFF;
-    /* material shadow v1 */
+    background-color: #ffffff;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.info_people {
+
+.team__desc {
+    padding: 30px;
+}
+
+.team__name {
     font-size: 16px;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
+
+.team__work {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.team__networks .social__link {
+    background-color: transparent;
+}
+
+.team__networks .social__icon {
+    fill: var(--light-grey-color);
+}
+
+/* team end */
+
+/* social srart */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 300ms ease;
+}
+
+.social__link:hover,
+.social__link:focus {
+    background-color: var(--accent-color);
+}
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+    fill: #ffffff;
+}
+
+.social__icon {
+    transition: fill 300ms ease;
+}
+
+/* social end */
+
 
 .teams :not(:last-child){
     padding-top: 30px;
     padding-bottom: 10px;
 }
 
-.works_as {
-    color: var(--secondary-color);
-    font-size: 16px;
-    line-height: normal;
-    letter-spacing: 0.03em;
-    text-align: center;
 
-}
 /*-------------FOOTER--------------*/
 .logo_footer span {
     font-family: var(--secondary-font), sans-serif;
@@ -820,9 +875,7 @@ text-transform: uppercase;
 .icon_footer :not(:last-child){
    margin-right: 10px; 
 }
-.social{
-    margin-bottom: 20px;
-}
+
 .footer_container{
     display: flex;
     align-items: baseline;
@@ -848,26 +901,26 @@ border-radius: 2px;
 background: #2196F3;
 content: '';
 left: 0;
-bottom: 0;
-top: 270%;
-
+bottom: -32px;
 }
-.img_text{
-    width: 370px;
+
+.img_info {
+    position: relative;
+}
+.img_text {
+    width: 100%;
     height: 70px;
     background: rgba(47, 48, 58, 0.80);
-    position: relative;
-    top: 76.3%;
+    position: absolute;
+    bottom: 0;
     align-items: center;
     justify-content: center;
     display: flex;
     color: #FFF;
     text-align: center;
-    font-family: Roboto;
+    font-family: var(--dominant-font);
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
@@ -875,7 +928,7 @@ top: 270%;
     position: absolute;
 }
 
-/*-----------модальне вікно-----------------*/
+/* modal start*/
 .modal{
     position: fixed;
     inset: 0;
@@ -898,16 +951,11 @@ top: 270%;
     cursor: default;
 }
 .modal_title{
-    display: flex;
     margin-bottom: 12px;
-    justify-content: center;
     color: #212121;
     text-align: center;
-    font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.6px;
 }
 .modal_close{
@@ -923,36 +971,44 @@ top: 270%;
     right: 8px;
 }
 
-/*-------------------*/
-.modal_close:hover{
-    fill: #2196F3;
+.modal__input-wrapper {
+    position: relative;
+    margin-bottom: 12px;
 }
-.modal_text>input{
 
-    width: 448px;
+.modal__label {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--secondary-color);
+    font-size: 12px;
+    letter-spacing: 0.12px;
+}
+
+.modal__input {
+    width: 100%;
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     padding-left: 42px;
 }
-label{
-    color: #757575;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-    padding-bottom: 4px;
+
+.modal__icon {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
 }
-label{
-    position: relative;
+
+
+/*-------------------*/
+.modal_close:hover{
+    fill: #2196F3;
 }
+
 .modal_text{
  display: flex;
 
 }
-.modal_text>input[type=text]:focus{
+.modal_text>input[type=text]:focus {
     border-color: #2196F3;
 }
 .modal_text:focus .modal_icon{
@@ -998,6 +1054,10 @@ line-height: normal;
 letter-spacing: 0.12px;
 outline: none;
 
+}
+
+.coment textarea:focus {
+    border-color: var(--accent-color);
 }
 .coment textarea{
     outline: none;
