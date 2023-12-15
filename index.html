@@ -399,8 +399,14 @@
                             <textarea cols="30" id="coment" rows="10" placeholder="Введіть текст"></textarea>
                             </div>
                             <div class="condition_modal">
-                                <input class="checkbox_input" type="checkbox" id="condition">
-                                <label for="condition">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+                                <input class="checkbox_hidden" type="checkbox" id="condition">                                
+                                <label class="checkbox_active" for="condition">
+                                <svg id="myCheckbox" class="checkbox" width="16" height="15">
+                                    <use xlink:href="./images/symbol-defs.svg#icon-check"></use>
+                                </svg>
+                                <p>Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a>
+                                </p>
+                            </label>
                             </div>
                             <button class="send" type="submit">Відправити</button>
             </form>                    
