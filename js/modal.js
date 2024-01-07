@@ -1,6 +1,6 @@
 const modalController = () => {
-const buttonElem = document.querySelector('.button_cent');
-const modalElem = document.querySelector('.modal');
+const buttonElem = document.querySelector('.text_info_button');
+const modalElem = document.querySelector('.overlay_modal');
 
 modalElem.style.cssText = `
 display: flex;
